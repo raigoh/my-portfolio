@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 interface EmailData {
   name: string;
   email: string;
+  subject: string;
   message: string;
 }
 
@@ -14,23 +15,33 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export const sendEmail = async ({ name, email, message }: EmailData) => {
+export async function sendEmail({ name, email, subject, message }: EmailData) {
   try {
-    const mailOptions = {
-      from: email,
+    await transporter.sendMail({
+      from: `"${name}" <${email}>`,
       to: process.env.GMAIL_USER,
-      subject: `Portfolio Contact: Message from ${name}`,
+      subject: `Portfolio Contact: ${subject}`,
       text: `
-        Name: ${name}
-        Email: ${email}
-        Message: ${message}
-      `,
-    };
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
 
-    await transporter.sendMail(mailOptions);
+Message:
+${message}
+      `,
+      html: `
+<h2>New Contact Form Submission</h2>
+<p><strong>Name:</strong> ${name}</p>
+<p><strong>Email:</strong> ${email}</p>
+<p><strong>Subject:</strong> ${subject}</p>
+<p><strong>Message:</strong></p>
+<p>${message}</p>
+      `,
+    });
+
     return { success: true };
   } catch (error) {
     console.error("Email send error:", error);
-    return { success: false, error: "Failed to send email" };
+    throw error;
   }
-};
+}

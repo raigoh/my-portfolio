@@ -46,7 +46,6 @@ export default function Contact() {
         toast.success(
           "Message sent! Thanks for reaching out. I'll get back to you soon."
         );
-        // Reset form
         setFormData({
           name: "",
           email: "",
@@ -54,7 +53,7 @@ export default function Contact() {
           message: "",
         });
       } else {
-        toast.error(data.message || "Failed to send message");
+        toast.error(data.error || "Failed to send message");
       }
     } catch (error) {
       toast.error("Something went wrong. Please try again later.");
