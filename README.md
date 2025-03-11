@@ -1,7 +1,7 @@
 # Personal Portfolio Website 🚀
 
 <div align="center">
-  <img src="public/images/me.jpg" alt="Portfolio Preview" width="600"/>
+  <img src="public/images/my-portfolio.png" alt="Portfolio Preview" width="600"/>
   <br />
   <br />
   
