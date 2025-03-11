@@ -34,7 +34,7 @@ export default function Contact() {
     try {
       console.log("Sending message...", formData);
 
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/.netlify/functions/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
