@@ -32,9 +32,9 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      console.log("Sending message...", formData); // Debug log
+      console.log("Sending message...", formData);
 
-      const response = await fetch("/.netlify/functions/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
