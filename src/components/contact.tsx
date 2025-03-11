@@ -42,10 +42,7 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
 
-      console.log("Response status:", response.status); // Debug log
-
       const data = await response.json();
-      console.log("Response data:", data); // Debug log
 
       if (response.ok) {
         toast.success(
