@@ -32,6 +32,8 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
+      console.log("Sending message...", formData); // Debug log
+
       const response = await fetch("/.netlify/functions/contact", {
         method: "POST",
         headers: {
@@ -40,7 +42,10 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
 
+      console.log("Response status:", response.status); // Debug log
+
       const data = await response.json();
+      console.log("Response data:", data); // Debug log
 
       if (response.ok) {
         toast.success(
@@ -56,6 +61,7 @@ export default function Contact() {
         toast.error(data.error || "Failed to send message");
       }
     } catch (error) {
+      console.error("Form submission error:", error);
       toast.error("Something went wrong. Please try again later.");
     } finally {
       setIsSubmitting(false);

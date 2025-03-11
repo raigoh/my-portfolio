@@ -1,11 +1,17 @@
 [build]
   command = "npm run build"
   publish = ".next"
+  functions = "netlify/functions"
 
 [build.environment]
   NEXT_USE_SSR = "false"
   NODE_VERSION = "18"
-  CI = "false"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Add this to handle function routes
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
