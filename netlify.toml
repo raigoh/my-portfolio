@@ -1,10 +1,11 @@
 [build]
-  command = "npm run build"
+  command = "CI=false npm run build"
   publish = "out"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
 
 [build.environment]
   NEXT_USE_SSR = "false"
   NODE_VERSION = "18"
+  CI = "false"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
