@@ -1,35 +1,26 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { sendEmail } from "@/lib/email";
 
-type ResponseData = {
-  message: string;
-  error?: string;
-};
-
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<ResponseData>
+  res: NextApiResponse
 ) {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
-  }
-
-  const { name, email, message } = req.body;
-
-  if (!name || !email || !message) {
-    return res.status(400).json({ message: "Missing required fields" });
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
-    const result = await sendEmail({ name, email, message });
-    if (result.success) {
-      res.status(200).json({ message: "Email sent successfully" });
-    } else {
-      res
-        .status(500)
-        .json({ message: "Failed to send email", error: result.error });
+    const { name, email, subject, message } = req.body;
+
+    if (!name || !email || !message) {
+      return res.status(400).json({ error: "Missing required fields" });
     }
+
+    await sendEmail({ name, email, subject, message });
+
+    return res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
-    res.status(500).json({ message: "Server error" });
+    console.error("Contact API error:", error);
+    return res.status(500).json({ error: "Failed to send email" });
   }
 }
