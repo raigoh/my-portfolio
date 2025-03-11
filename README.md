@@ -1,34 +1,44 @@
 # Personal Portfolio Website 🚀
 
-![Portfolio Preview](public/images/preview.png)
+<div align="center">
+  <img src="public/images/me.jpg" alt="Portfolio Preview" width="600"/>
+  <br />
+  <br />
+  
+  ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+</div>
 
-A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a clean design, smooth animations, and a contact form with email integration.
+## 🚀 Features
 
-## ✨ Features
+- ⚡️ Modern and Responsive Design
+- 🎨 Customizable Theme (Light/Dark Mode)
+- 📧 Contact Form with Email Integration
+- 🎯 Interactive Project Showcase
+- 📱 Mobile-First Approach
+- 🔄 Smooth Animations with Framer Motion
+- 🛠 Built with TypeScript for Type Safety
 
-- 🎨 Modern and clean design
-- 📱 Fully responsive
-- 🌓 Dark/Light mode support
-- ⚡ Fast performance
-- 🎭 Smooth animations with Framer Motion
-- 📧 Contact form with email integration
-- 🔧 Built with TypeScript
-- 🎯 SEO optimized
+## 🛠️ Tech Stack
 
-## 🛠️ Built With
-
-- [Next.js 14](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Shadcn/ui](https://ui.shadcn.com/)
-- [Nodemailer](https://nodemailer.com/)
+- **Framework:** Next.js 15.2
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Animations:** Framer Motion
+- **Email Service:** Nodemailer
+- **Deployment:** Netlify
+- **Form Handling:** React Hook Form
+- **Notifications:** Sonner
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (version 18.0 or higher)
+- Node.js (version 18 or higher)
 - npm or yarn
 
 ### Installation
@@ -36,69 +46,48 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/raigoh/my-portfolio.git
 ```
 
 2. Install dependencies
 
 ```bash
+cd my-portfolio
 npm install
-# or
-yarn install
 ```
 
-3. Create a `.env` file in the root directory and add your email configuration:
+3. Create a `.env` file in the root directory
 
 ```env
 GMAIL_USER=your-email@gmail.com
 GMAIL_APP_PASSWORD=your-app-password
 ```
 
-4. Run the development server
+4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-### 📧 Email Configuration
-
-To enable the contact form functionality:
-
-1. Go to your Google Account settings
-2. Enable 2-Step Verification
-3. Generate an App Password:
-   - Go to Security → App Passwords
-   - Select 'Mail' and your device
-   - Copy the generated password
-4. Use these credentials in your `.env` file
 
 ## 📁 Project Structure
 
-portfolio/
-├── src/
-│ ├── components/
-│ │ ├── ui/
-│ │ └── ...
-│ ├── lib/
-│ │ └── email.ts
-│ └── pages/
-│ └── api/
+```bash
+my-portfolio/
+├── netlify/
+│ └── functions/
+│ └── contact.js
 ├── public/
-│ └── images/
-└── ...
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+│ ├── images/
+│ ├── videos/
+│ └── pdf/
+├── src/
+│ ├── app/
+│ ├── components/
+│ └── lib/
+├── netlify.toml
+├── next.config.ts
+└── package.json
+```
 
 ## 🎨 Customization
 
@@ -107,25 +96,58 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 3. Add your projects in `src/components/projects.tsx`
 4. Customize theme in `tailwind.config.js`
 
+## 🔧 Configuration Files
+
+- `netlify.toml` - Netlify deployment configuration
+- `next.config.ts` - Next.js configuration
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration
+
 ## 📝 Environment Variables
 
-Create a `.env` file with the following variables:
+Required environment variables:
 
 ```env
 GMAIL_USER=your-email@gmail.com
 GMAIL_APP_PASSWORD=your-app-password
 ```
 
-## 📄 License
+## 🚀 Deployment
+
+This project is configured for deployment on Netlify:
+
+1. Connect your GitHub repository to Netlify
+2. Configure the environment variables in Netlify's dashboard
+3. Deploy with the following settings:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+   - Node version: 18
+
+## 📄 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contact
+## 📧 Contact
 
-Your Name - [vikationu@gmail.com](mailto:vikationu@gmail.com)
+Raigo Hõim - [vikationu@gmail.com](mailto:vikationu@gmail.com)
 
-Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
+Project Link: [https://github.com/yourusername/my-portfolio](https://github.com/raigoh/my-portfolio.git)
 
 ---
+
+<div align="center">
+  Made with ❤️ by Raigo Hõim
+</div>
 
 ⭐️ If you found this helpful, please star the repository!
