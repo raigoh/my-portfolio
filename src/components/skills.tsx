@@ -43,7 +43,7 @@ export default function Skills() {
     {
       category: "Database",
       icon: <Database className="h-6 w-6" />,
-      items: ["PostgreSQL", "MySQL", "SQL", "MariaDB"],
+      items: ["PostgreSQL", "MySQL", "SQL", "SQLite", "MariaDB"],
     },
     {
       category: "IT Systems & Support",
