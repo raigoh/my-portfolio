@@ -32,6 +32,10 @@ export default function About() {
               <img
                 src="/images/raigo.jpg"
                 alt="Profile"
+                width={800}
+                height={600}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>

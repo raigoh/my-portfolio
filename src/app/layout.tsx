@@ -8,8 +8,15 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio",
-  description: "Full-stack developer and systems specialist portfolio",
+  title: "Raigo Hõim | Full-Stack Developer & Systems Specialist",
+  description:
+    "Professional portfolio of Raigo Hõim, showcasing full-stack development projects and IT systems expertise",
+  openGraph: {
+    type: "website",
+    title: "Raigo Hõim | Developer Portfolio",
+    description: "Full-stack developer and systems specialist portfolio",
+    images: ["/images/my-portfolio.png"],
+  },
 };
 
 export default function RootLayout({
