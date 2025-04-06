@@ -37,6 +37,44 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Web-Game",
+      description:
+        "A modern multiplayer twist on the classic Pong game featuring a unique dodecagon-shaped arena with real-time physics and stunning neon visuals.",
+      image: "/images/pong.png",
+      tags: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "WebSocket",
+        "Node.js",
+        "Express.js",
+        "Socket.IO",
+        "REST APIs",
+        "Ngrok",
+      ],
+      category: "fullstack",
+      hasDemo: true,
+      demoLink: "/videos/web-game.mp4",
+      githubLink: "https://github.com/raigoh/web-game",
+      featured: true,
+      learnings: [
+        "We gained experience in building a real-time multiplayer game system from scratch, implementing core functionalities like WebSocket communication, room management, and player synchronization",
+        "We learned to create a dynamic game state system using Socket.IO, making real-time updates more efficient and reducing network overhead",
+        "We developed skills in implementing server-side game logic with Node.js and Express.js, managing multiple player connections and game rooms",
+        "We created a centralized game state management system with broadcast patterns, enabling synchronized gameplay and persistent room states",
+        "We built a robust multiplayer web game with both player interaction and real-time communication, handling complex game states and user interactions",
+        "We implemented server communication using Socket.IO and Express.js, creating real-time endpoints for managing game sessions and player data",
+        "We enhanced understanding of event-driven architecture and state management through building custom game mechanics and multiplayer features",
+        "We learned to structure a project with clear separation between client and server logic, dividing game core functionality from networking code",
+      ],
+      improvements:
+        "I'd like to add user authentication and persistent player profiles for tracking game progress. The multiplayer system needs smoother real-time synchronization and latency optimization. A comprehensive leaderboard system would improve engagement, and the game mechanics could benefit from additional game modes. Also to expand the UI with mobile responsiveness and touch controls for cross-platform play.",
+      feedback:
+        "The peer review process highlighted my strong performance in developing the multiplayer web game. Fellow team members particularly noted my reliability in delivering quality work and problem-solving abilities. My technical proficiency was demonstrated through implementing complex real-time features and meeting project requirements effectively. The feedback emphasized my positive team contributions, being open to collaboration and maintaining a productive atmosphere. Team members appreciated my ability to understand the project scope and create appropriate solutions, especially in handling WebSocket communication and game state management. My problem-solving approach was praised for finding efficient solutions without compromising quality. The review also highlighted my growth throughout the project, particularly in grasping multiplayer game concepts and implementing them successfully. This feedback demonstrates my capability to be both a technical contributor and supportive team member who helps maintain a positive development environment.",
+      codeAvailability: DEFAULT_CODE_AVAILABILITY,
+    },
+    {
+      id: 2,
       title: "Frontend-Framework",
       description:
         "A modular JavaScript framework-based Calculator web application demonstrating client-side routing, state management, component creation, and server interaction using Express. This project serves as both an application and a framework example, highlighting best practices in building maintainable, extensible web applications.",
@@ -64,8 +102,8 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 2,
-      title: "Match-me",
+      id: 3,
+      title: "Match-Me",
       description:
         "A TaskBuddy recommendation application designed to connect kood/Sisu students based on their profile information. The application helps students find study partners and collaborators with similar interests and skills.",
       image: "/images/match-me.png",
@@ -99,7 +137,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 3,
+      id: 4,
       title: "Race Track Info Screens",
       description: "A real-time system to control races and inform spectators.",
       image: "/images/circuit.png",
@@ -126,7 +164,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 4,
+      id: 5,
       title: "Literary Lions Forum",
       description:
         "Literary Lions Forum is a vibrant web-based discussion platform for literature enthusiasts. Connect with fellow book lovers, share your thoughts on your favorite works, and engage in stimulating literary discussions.",
@@ -151,7 +189,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 5,
+      id: 6,
       title: "Train Pathfinding System",
       description:
         "This project implements a train pathfinding system that finds optimal routes for multiple trains in a railway network. It reads a network map, calculates the best paths for a given number of trains between specified start and end stations, and simulates the train movements.",
@@ -176,7 +214,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 6,
+      id: 7,
       title: "Cars-Viewer",
       description:
         "This application allows you to manage and view car models, manufacturers, and categories. It also provides functionalities for filtering and comparing different car models.",
@@ -201,7 +239,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 7,
+      id: 8,
       title: "ASCII Art Decoder/Encoder",
       description:
         "This web application allows users to decode and encode ASCII art. It provides a simple interface where users can input ASCII art and choose to either decode or encode it.",
@@ -226,7 +264,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 8,
+      id: 9,
       title: "Password-generator",
       description:
         "A modern, secure password generator built with vanilla JavaScript that helps users create strong, customizable passwords with an intuitive interface and dark mode support.",
@@ -254,7 +292,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 9,
+      id: 10,
       title: "Admin-Dashboard",
       description:
         "This repository contains the HTML and CSS code for a static webpage called 'Admin Dashboard.' It is a user interface template that can be used as a starting point for creating an admin dashboard for web applications.",
@@ -278,7 +316,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 10,
+      id: 11,
       title: "Sign-Up Page",
       description:
         "This is a simple sign-up page template created with HTML and CSS. It provides a clean and responsive design for user registration.",
@@ -302,7 +340,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 11,
+      id: 12,
       title: "Battleship",
       description:
         "Welcome to the Battleship game! This is a simple Python implementation of the classic game Battleship. The game is played on an 8x8 grid where you try to sink hidden battleships by guessing their locations.",
