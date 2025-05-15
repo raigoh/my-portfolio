@@ -37,6 +37,42 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Digital Detective",
+      description:
+        "A powerful command-line OSINT (Open Source Intelligence) data gathering tool that collects information about people, IP addresses, and usernames across various platforms with advanced rate limiting and data normalization.",
+      image: "/images/digital-detective.png",
+      tags: [
+        "Python",
+        "OSINT",
+        "Security",
+        "CLI",
+        "API Integration",
+        "Data Analysis",
+        "Rate Limiting",
+        "Web Scraping",
+      ],
+      category: "cybersecurity",
+      hasDemo: true,
+      demoLink: "/videos/digital-detective.mp4",
+      githubLink: "https://github.com/raigoh/digital-detective",
+      learnings: [
+        "I gained experience in building a comprehensive OSINT tool from scratch, implementing core functionalities like API integration, rate limiting, and data normalization",
+        "I learned to create a robust data collection system using multiple APIs and web scraping techniques, ensuring reliable and accurate information gathering",
+        "I developed skills in implementing rate limiting and error handling to prevent API throttling and ensure smooth operation",
+        "I created a centralized data processing system with normalization patterns, enabling consistent output across different data sources",
+        "I built a powerful command-line interface with rich terminal output, making complex data easily readable and accessible",
+        "I implemented secure API key management using environment variables and proper error handling for sensitive operations",
+        "I enhanced understanding of cybersecurity principles and ethical data collection practices",
+        "I learned to structure a project with clear separation of concerns, dividing core functionality from data processing and output formatting",
+      ],
+      improvements:
+        "I'd like to add more data sources and APIs for comprehensive information gathering. The rate limiting system needs more sophisticated backoff strategies, and the output format could benefit from additional export options like JSON and CSV. I'm also planning to implement a web interface for easier access and better visualization of the collected data.",
+      feedback:
+        "Peer reviewers highlighted my strong understanding of project requirements and my ability to deliver effective, secure solutions. I was praised for my attention to security best practices, ethical data handling, and technical proficiency—especially in API integration, rate limiting, and data normalization. Reviewers noted my positive approach to collaboration and problem-solving, as well as my growth in cybersecurity concepts. My solutions were recognized as compliant with requirements and legal/ethical boundaries, and my willingness to learn and adapt was appreciated. This feedback demonstrates my commitment to building secure, reliable tools and continuously improving my cybersecurity expertise.",
+      codeAvailability: DEFAULT_CODE_AVAILABILITY,
+    },
+    {
+      id: 2,
       title: "Web-Game",
       description:
         "A modern multiplayer twist on the classic Pong game featuring a unique dodecagon-shaped arena with real-time physics and stunning neon visuals.",
@@ -56,7 +92,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/web-game.mp4",
       githubLink: "https://github.com/raigoh/web-game",
-      featured: true,
       learnings: [
         "We gained experience in building a real-time multiplayer game system from scratch, implementing core functionalities like WebSocket communication, room management, and player synchronization",
         "We learned to create a dynamic game state system using Socket.IO, making real-time updates more efficient and reducing network overhead",
@@ -74,7 +109,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 2,
+      id: 3,
       title: "Frontend-Framework",
       description:
         "A modular JavaScript framework-based Calculator web application demonstrating client-side routing, state management, component creation, and server interaction using Express. This project serves as both an application and a framework example, highlighting best practices in building maintainable, extensible web applications.",
@@ -84,7 +119,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/framework.mp4",
       githubLink: "https://github.com/raigoh/frontend-framework",
-      featured: true,
       learnings: [
         "We gained experience in building a modular JavaScript framework from scratch, implementing core functionalities like routing, state management, and component creation",
         "We learned to create a flexible component system using curried functions, making element creation more intuitive and reducing boilerplate code",
@@ -102,7 +136,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 3,
+      id: 4,
       title: "Match-Me",
       description:
         "A TaskBuddy recommendation application designed to connect kood/Sisu students based on their profile information. The application helps students find study partners and collaborators with similar interests and skills.",
@@ -119,7 +153,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/match-me.mp4",
       githubLink: "https://github.com/raigoh/match-me",
-      featured: true,
       learnings: [
         "We gained hands-on experience in implementing real-time communication using WebSocket and GraphQL subscriptions, enabling instant chat and status updates between users",
         "We developed skills in building secure authentication systems using JWT tokens and handling sensitive user data appropriately",
@@ -137,7 +170,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 4,
+      id: 5,
       title: "Race Track Info Screens",
       description: "A real-time system to control races and inform spectators.",
       image: "/images/circuit.png",
@@ -146,7 +179,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/race.mp4",
       githubLink: "https://github.com/raigoh/Circuit",
-      featured: true,
       learnings: [
         "We learned how to implement real-time communication between multiple interfaces using Socket.IO, ensuring instant updates across all user screens",
         "We gained experience in building secure authentication systems, implementing role-based access with different keys for each user type",
@@ -164,7 +196,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 5,
+      id: 6,
       title: "Literary Lions Forum",
       description:
         "Literary Lions Forum is a vibrant web-based discussion platform for literature enthusiasts. Connect with fellow book lovers, share your thoughts on your favorite works, and engage in stimulating literary discussions.",
@@ -174,7 +206,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/forum.mp4",
       githubLink: "https://github.com/raigoh/Volumes",
-      featured: true,
       learnings: [
         "We learned how to build a complete web application using Go, from routing to database management",
         "We gained practical experience in implementing user authentication and session management",
@@ -189,7 +220,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 6,
+      id: 7,
       title: "Train Pathfinding System",
       description:
         "This project implements a train pathfinding system that finds optimal routes for multiple trains in a railway network. It reads a network map, calculates the best paths for a given number of trains between specified start and end stations, and simulates the train movements.",
@@ -199,7 +230,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/stations.mp4",
       githubLink: "https://github.com/raigoh/internal-mapping-system",
-      featured: false,
       learnings: [
         "We strengthened technical expertise through complex problem-solving and efficient code implementation",
         "We developed strong code review skills and learned to provide well-explained feedback to peers",
@@ -214,7 +244,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 7,
+      id: 8,
       title: "Cars-Viewer",
       description:
         "This application allows you to manage and view car models, manufacturers, and categories. It also provides functionalities for filtering and comparing different car models.",
@@ -224,7 +254,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/cars.mp4",
       githubLink: "https://github.com/raigoh/transport-interface",
-      featured: true,
       learnings: [
         "I learned the importance of effective middleware implementation and server architecture",
         "I developed a deep understanding of HTTP server patterns and graceful shutdown procedures",
@@ -239,7 +268,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 8,
+      id: 9,
       title: "ASCII Art Decoder/Encoder",
       description:
         "This web application allows users to decode and encode ASCII art. It provides a simple interface where users can input ASCII art and choose to either decode or encode it.",
@@ -249,7 +278,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/ascii.mp4",
       githubLink: "https://github.com/raigoh/Artix",
-      featured: true,
       learnings: [
         "I learned the importance of effective project structuring and modular programming",
         "I developed a deep understanding of creating maintainable and scalable architectures",
@@ -264,17 +292,16 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 9,
+      id: 10,
       title: "Password-generator",
       description:
         "A modern, secure password generator built with vanilla JavaScript that helps users create strong, customizable passwords with an intuitive interface and dark mode support.",
       image: "/images/password.png",
       tags: ["HTML", "CSS", "JavaScript"],
-      category: "fullstack",
+      category: "cybersecurity",
       hasDemo: true,
       demoLink: "/videos/password.mp4",
       githubLink: "https://github.com/raigoh/Password-generator",
-      featured: false,
       learnings: [
         "I developed a secure password generator implementing NIST guidelines, gaining experience in cryptographic best practices and security considerations",
         "I created a modular JavaScript architecture using ES6 modules, improving my skills in organizing code with clear separation of concerns",
@@ -292,7 +319,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 10,
+      id: 11,
       title: "Admin-Dashboard",
       description:
         "This repository contains the HTML and CSS code for a static webpage called 'Admin Dashboard.' It is a user interface template that can be used as a starting point for creating an admin dashboard for web applications.",
@@ -301,7 +328,6 @@ export default function Projects() {
       category: "frontend",
       hasDemo: false,
       githubLink: "https://github.com/raigoh/Admin-Dashboard",
-      featured: false,
       learnings: [
         "I mastered CSS Grid and Flexbox by creating complex dashboard layouts",
         "I learned to organize CSS effectively using BEM methodology",
@@ -316,7 +342,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 11,
+      id: 12,
       title: "Sign-Up Page",
       description:
         "This is a simple sign-up page template created with HTML and CSS. It provides a clean and responsive design for user registration.",
@@ -325,7 +351,6 @@ export default function Projects() {
       category: "frontend",
       hasDemo: false,
       githubLink: "https://github.com/raigoh/Sign-up-Form",
-      featured: false,
       learnings: [
         "I implemented responsive design using flexbox and media queries to ensure the form works on both desktop and mobile devices",
         "I learned to create professional form layouts with proper input validation and styling",
@@ -340,7 +365,7 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 12,
+      id: 13,
       title: "Battleship",
       description:
         "Welcome to the Battleship game! This is a simple Python implementation of the classic game Battleship. The game is played on an 8x8 grid where you try to sink hidden battleships by guessing their locations.",
@@ -350,7 +375,6 @@ export default function Projects() {
       hasDemo: true,
       demoLink: "/videos/battleship.mp4",
       githubLink: "https://github.com/raigoh/Battleship",
-      featured: false,
       learnings: [
         "I implemented game logic for ship placement and collision detection in Python",
         "I learned to work with 2D arrays to create and manage the game board",
@@ -372,8 +396,6 @@ export default function Projects() {
     if (activeTab === "all") {
       // Sort by ID in ascending order before slicing
       filtered = projects.sort((a, b) => a.id - b.id);
-    } else if (activeTab === "featured") {
-      filtered = projects.filter((p) => p.featured);
     } else {
       filtered = projects.filter((p) => p.category === activeTab);
     }
@@ -417,8 +439,8 @@ export default function Projects() {
           <div className="flex justify-center">
             <TabsList className="grid grid-cols-3 md:grid-cols-5 w-full max-w-2xl">
               <TabsTrigger value="all">All</TabsTrigger>
-              <TabsTrigger value="featured">Featured</TabsTrigger>
               <TabsTrigger value="fullstack">Full Stack</TabsTrigger>
+              <TabsTrigger value="cybersecurity">Cybersecurity</TabsTrigger>
               <TabsTrigger value="frontend">Frontend</TabsTrigger>
               <TabsTrigger value="backend">Backend</TabsTrigger>
             </TabsList>
