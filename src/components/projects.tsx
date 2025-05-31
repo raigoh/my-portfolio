@@ -36,6 +36,45 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Port Prowler",
+      description:
+        "Port Prowler is a powerful, multi-protocol port scanning tool for cybersecurity professionals and enthusiasts. It helps map network topology, identify open/closed/filtered ports, detect running services, and extract service version information. The tool supports multiple scanning methods (TCP Connect, UDP, SYN, and Stealth scans), parallel processing with multi-threading, and advanced features like OS fingerprinting and banner grabbing. Built with a focus on educational clarity and extensibility, it provides detailed, color-coded output with comprehensive service information.",
+      image: "/images/port-prowler.png",
+      tags: [
+        "Python",
+        "Network Security",
+        "Socket Programming",
+        "Multi-threading",
+        "OS Fingerprinting",
+        "Service Detection",
+        "Banner Grabbing",
+        "CLI",
+        "Scapy",
+        "Network Analysis",
+        "Security Tools",
+        "Parallel Processing",
+      ],
+      category: "cybersecurity",
+      hasDemo: false,
+      demoLink: "",
+      githubLink: "https://github.com/raigoh/port-prowler.git",
+      learnings: [
+        "I implemented multiple port scanning techniques (TCP Connect, UDP, SYN, and Stealth scans) using Python's socket library and Scapy, gaining deep understanding of network protocols and packet manipulation",
+        "I developed a sophisticated OS fingerprinting system that analyzes port patterns and service banners to identify target operating systems with probability assessment",
+        "I created a parallel processing system using ThreadPoolExecutor for efficient port scanning, optimizing performance while maintaining accuracy",
+        "I built a comprehensive service detection system that identifies common services and extracts version information from banners using regex patterns",
+        "I implemented a robust error handling system for network operations, including timeout management and connection error recovery",
+        "I designed a modular architecture separating core scanning logic from output formatting and command-line interface",
+        "I enhanced security by implementing proper privilege checks for SYN scans and clear legal warnings for responsible usage",
+        "I optimized performance for handling large port ranges with configurable thread pools and timeout settings",
+      ],
+      improvements:
+        "I plan to add support for IPv6 scanning, implement more advanced OS fingerprinting techniques using TCP/IP stack behavior analysis, and add vulnerability assessment capabilities by cross-referencing service versions with known CVEs. I'd also like to add a web interface for easier interaction, implement scan scheduling and reporting features, and add support for custom scan scripts and plugins.",
+      feedback:
+        "The peer review process highlighted my strong technical implementation of network scanning algorithms and security features. Reviewers particularly praised my deep understanding of the project requirements and clear explanation of the solutions implemented. During the code defense, I demonstrated comprehensive knowledge of the project, which was noted as being particularly strong due to my prior experience in the field. Reviewers appreciated how I was able to solve and explain any issues that arose during development. My ability to answer technical questions with ease and provide detailed explanations of the implementation was commended. The project demonstrated my ability to combine existing knowledge with new learning, while maintaining clear communication of technical concepts and solutions.",
+      codeAvailability: DEFAULT_CODE_AVAILABILITY,
+    },
+    {
       title: "InvisiBits",
       description:
         "InvisiBits is a modern, web-based steganography tool that allows you to hide (encode), extract (decode), and detect secret messages in images and audio using the Least Significant Bit (LSB) technique. With a beautiful, responsive UI and advanced features like password protection and text compression, InvisiBits makes digital privacy accessible to everyone. The tool supports both image (PNG/JPG) and audio (WAV) steganography, with real-time preview, drag-and-drop uploads, and comprehensive error handling.",
