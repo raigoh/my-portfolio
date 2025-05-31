@@ -36,6 +36,45 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Bug Bounty",
+      description:
+        "A comprehensive penetration testing project focused on the Damn Vulnerable Web Application (DVWA). This project demonstrates various web application vulnerabilities and their exploitation techniques in a controlled environment. The project includes custom tools for brute force attacks, SQL injection testing, and vulnerability documentation. Built with a focus on educational clarity and security best practices, it provides detailed documentation of attack methodologies, risk assessments, and mitigation recommendations.",
+      image: "/images/dvwa_login.png",
+      tags: [
+        "Python",
+        "Network Security",
+        "Penetration Testing",
+        "Web Security",
+        "SQL Injection",
+        "Brute Force",
+        "Vulnerability Assessment",
+        "Security Tools",
+        "Metasploit",
+        "Burp Suite",
+        "Nmap",
+        "Documentation",
+      ],
+      category: "cybersecurity",
+      hasDemo: false,
+      demoLink: "",
+      githubLink: "https://github.com/raigoh/bug-bounty.git",
+      learnings: [
+        "I developed a custom Python-based brute force tool with multi-threading support, configurable security levels, and detailed logging for automated credential testing",
+        "I implemented comprehensive SQL injection testing methodologies, including UNION-based attacks, error-based injection, and automated exploitation using sqlmap",
+        "I created a detailed documentation system for attack methodologies, including step-by-step reproduction guides and risk assessments",
+        "I built a modular architecture for custom security tools, separating core functionality from output formatting and command-line interface",
+        "I implemented robust error handling and rate limiting in automated tools to prevent server overload during testing",
+        "I designed a comprehensive reporting system with detailed findings, risk ratings, and mitigation recommendations",
+        "I enhanced security testing capabilities by implementing chained exploits (SQL Injection → File Upload, LFI → RFI)",
+        "I optimized performance for handling large-scale security assessments with configurable thread pools and timeout settings",
+      ],
+      improvements:
+        "I plan to add support for more vulnerability types, implement automated report generation, and enhance the custom tools with machine learning capabilities for better vulnerability detection. I'd also like to add a web interface for easier interaction with the tools, implement scan scheduling and reporting features, and add support for custom exploit scripts and plugins.",
+      feedback:
+        "The peer review process highlighted my strong technical implementation of security testing tools and methodologies. Reviewers particularly praised my deep understanding of web application vulnerabilities and clear explanation of exploitation techniques. During the code defense, I demonstrated comprehensive knowledge of security concepts, which was noted as being particularly strong due to my prior experience in the field. Reviewers appreciated how I was able to solve and explain any issues that arose during testing. My ability to answer technical questions with ease and provide detailed explanations of the implementation was commended. The project demonstrated my ability to combine existing knowledge with new learning, while maintaining clear communication of technical concepts and solutions. My peers specifically noted that I 'understood the task perfectly and overall did an excellent job', highlighting my strong grasp of project requirements and the quality of solutions submitted.",
+      codeAvailability: DEFAULT_CODE_AVAILABILITY,
+    },
+    {
       title: "Port Prowler",
       description:
         "Port Prowler is a powerful, multi-protocol port scanning tool for cybersecurity professionals and enthusiasts. It helps map network topology, identify open/closed/filtered ports, detect running services, and extract service version information. The tool supports multiple scanning methods (TCP Connect, UDP, SYN, and Stealth scans), parallel processing with multi-threading, and advanced features like OS fingerprinting and banner grabbing. Built with a focus on educational clarity and extensibility, it provides detailed, color-coded output with comprehensive service information.",
