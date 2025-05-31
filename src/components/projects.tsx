@@ -36,7 +36,46 @@ export default function Projects() {
 
   const projects = [
     {
-      id: 1,
+      title: "InvisiBits",
+      description:
+        "InvisiBits is a modern, web-based steganography tool that allows you to hide (encode), extract (decode), and detect secret messages in images and audio using the Least Significant Bit (LSB) technique. With a beautiful, responsive UI and advanced features like password protection and text compression, InvisiBits makes digital privacy accessible to everyone. The tool supports both image (PNG/JPG) and audio (WAV) steganography, with real-time preview, drag-and-drop uploads, and comprehensive error handling.",
+      image: "/images/detect.png",
+      tags: [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "LSB Steganography",
+        "AES-256 Encryption",
+        "LZString Compression",
+        "Web Audio API",
+        "File API",
+        "Responsive Design",
+        "Offline First",
+        "Security",
+        "Drag & Drop",
+        "Real-time Preview",
+      ],
+      category: "cybersecurity",
+      hasDemo: false,
+      demoLink: "",
+      githubLink: "https://github.com/raigoh/invisibits.git",
+      learnings: [
+        "I implemented the LSB (Least Significant Bit) steganography technique for both images and audio files, gaining deep understanding of binary data manipulation and bit-level operations",
+        "I developed a secure encryption system using AES-256 for password protection of hidden messages, with proper key derivation and secure random number generation",
+        "I created an efficient compression system using LZString to optimize message storage capacity and increase the maximum message size",
+        "I built a responsive, offline-first web application with modern UI/UX principles, including drag-and-drop file uploads and real-time previews",
+        "I implemented comprehensive error handling and validation for file types, sizes, and message lengths, ensuring robust user experience",
+        "I designed a modular architecture separating core steganography logic from UI components, making the code maintainable and extensible",
+        "I enhanced security by implementing secure random number generation, proper key derivation, and metadata validation",
+        "I optimized performance for handling files up to 5MB with memory-efficient processing and progressive loading",
+      ],
+      improvements:
+        "I plan to add support for more file formats (GIF, MP3), implement batch processing for multiple files, add a command-line interface for automation, and enhance the detection algorithm with machine learning capabilities. I'd also like to add a plugin system for custom steganography methods, improve the UI with more advanced visualization tools, and implement WebAssembly for better performance.",
+      feedback:
+        "The peer review process highlighted my strong technical implementation of the steganography algorithms and security features. Reviewers particularly praised my deep understanding and clear explanation of steganography and encryption concepts, noting that I was able to perfectly explain the technical solutions implemented. My attention to security best practices and performance optimization was noted as exceptional. The user interface was commended for its intuitive design and accessibility features. Reviewers appreciated the thorough error handling and user feedback mechanisms. The project demonstrated my ability to combine complex technical concepts with user-friendly design principles while maintaining clear communication of technical details.",
+      codeAvailability: DEFAULT_CODE_AVAILABILITY,
+    },
+    {
       title: "Digital Detective",
       description:
         "A powerful command-line OSINT (Open Source Intelligence) data gathering tool that collects information about people, IP addresses, and usernames across various platforms with advanced rate limiting and data normalization.",
@@ -72,7 +111,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 2,
       title: "Web-Game",
       description:
         "A modern multiplayer twist on the classic Pong game featuring a unique dodecagon-shaped arena with real-time physics and stunning neon visuals.",
@@ -109,7 +147,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 3,
       title: "Frontend-Framework",
       description:
         "A modular JavaScript framework-based Calculator web application demonstrating client-side routing, state management, component creation, and server interaction using Express. This project serves as both an application and a framework example, highlighting best practices in building maintainable, extensible web applications.",
@@ -136,7 +173,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 4,
       title: "Match-Me",
       description:
         "A TaskBuddy recommendation application designed to connect kood/Sisu students based on their profile information. The application helps students find study partners and collaborators with similar interests and skills.",
@@ -170,7 +206,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 5,
       title: "Race Track Info Screens",
       description: "A real-time system to control races and inform spectators.",
       image: "/images/circuit.png",
@@ -196,7 +231,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 6,
       title: "Literary Lions Forum",
       description:
         "Literary Lions Forum is a vibrant web-based discussion platform for literature enthusiasts. Connect with fellow book lovers, share your thoughts on your favorite works, and engage in stimulating literary discussions.",
@@ -220,7 +254,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 7,
       title: "Train Pathfinding System",
       description:
         "This project implements a train pathfinding system that finds optimal routes for multiple trains in a railway network. It reads a network map, calculates the best paths for a given number of trains between specified start and end stations, and simulates the train movements.",
@@ -244,7 +277,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 8,
       title: "Cars-Viewer",
       description:
         "This application allows you to manage and view car models, manufacturers, and categories. It also provides functionalities for filtering and comparing different car models.",
@@ -268,7 +300,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 9,
       title: "ASCII Art Decoder/Encoder",
       description:
         "This web application allows users to decode and encode ASCII art. It provides a simple interface where users can input ASCII art and choose to either decode or encode it.",
@@ -292,7 +323,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 10,
       title: "Password-generator",
       description:
         "A modern, secure password generator built with vanilla JavaScript that helps users create strong, customizable passwords with an intuitive interface and dark mode support.",
@@ -319,7 +349,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 11,
       title: "Admin-Dashboard",
       description:
         "This repository contains the HTML and CSS code for a static webpage called 'Admin Dashboard.' It is a user interface template that can be used as a starting point for creating an admin dashboard for web applications.",
@@ -342,7 +371,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 12,
       title: "Sign-Up Page",
       description:
         "This is a simple sign-up page template created with HTML and CSS. It provides a clean and responsive design for user registration.",
@@ -365,7 +393,6 @@ export default function Projects() {
       codeAvailability: DEFAULT_CODE_AVAILABILITY,
     },
     {
-      id: 13,
       title: "Battleship",
       description:
         "Welcome to the Battleship game! This is a simple Python implementation of the classic game Battleship. The game is played on an 8x8 grid where you try to sink hidden battleships by guessing their locations.",
@@ -394,8 +421,8 @@ export default function Projects() {
     let filtered = [];
 
     if (activeTab === "all") {
-      // Sort by ID in ascending order before slicing
-      filtered = projects.sort((a, b) => a.id - b.id);
+      // Sort by array index
+      filtered = [...projects];
     } else {
       filtered = projects.filter((p) => p.category === activeTab);
     }
@@ -450,7 +477,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProjects.map((project, index) => (
                 <motion.div
-                  key={project.id}
+                  key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
